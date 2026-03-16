@@ -29,11 +29,7 @@ spec:
           valueFrom:  
             secretKeyRef: 
               name: mongo-secret
-<<<<<<< HEAD
               key:  password
-=======
-              key:  username
->>>>>>> 0d30fb1985763d8c496b7de51fd1365aabf6eee5
         - name: DB_URL
           valueFrom:
             configMapKeyRef:
@@ -43,11 +39,7 @@ spec:
 apiVersion: v1
 kind: Service
 metadata:
-<<<<<<< HEAD
   name: webapp-service
-=======
-  name: mongo-service
->>>>>>> 0d30fb1985763d8c496b7de51fd1365aabf6eee5
 spec:
   type: NodePort
   selector:
@@ -56,8 +48,4 @@ spec:
     - protocol: TCP
       port: 3000
       targetPort: 3000
-<<<<<<< HEAD
       nodePort: 30100
-=======
-      nodePort: 30200
->>>>>>> 0d30fb1985763d8c496b7de51fd1365aabf6eee5

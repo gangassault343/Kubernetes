@@ -1,32 +1,18 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-<<<<<<< HEAD
   name: mongo-deployment
   labels:  
     app: mongo
-=======
-  name: mongodb-deployment
-  labels:  
-    app: mongodb
->>>>>>> 0d30fb1985763d8c496b7de51fd1365aabf6eee5
 spec:
   replicas: 1
   selector:
     matchLabels:
-<<<<<<< HEAD
       app: mongo
   template:
     metadata:
       labels:
         app: mongo
-=======
-      app: mongodb
-  template:
-    metadata:
-      labels:
-        app: mongodb
->>>>>>> 0d30fb1985763d8c496b7de51fd1365aabf6eee5
     spec:
       containers:
       - name: mongodb
@@ -52,11 +38,7 @@ metadata:
   name: mongo-service
 spec:
   selector:
-<<<<<<< HEAD
     app: mongo
-=======
-    app: mongodb
->>>>>>> 0d30fb1985763d8c496b7de51fd1365aabf6eee5
   ports:
     - protocol: TCP
       port: 27017
