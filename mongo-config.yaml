@@ -3,4 +3,8 @@ kind: ConfigMap
 metadata:
   name: mongo-config
 data:
+<<<<<<< HEAD
   mongo-url: mongo-service
+=======
+  mongo-url:  mongo-service
+>>>>>>> 0d30fb1985763d8c496b7de51fd1365aabf6eee5
